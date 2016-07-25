@@ -14,6 +14,7 @@
 		9D20F7431D45F7EB00E5082B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D20F7411D45F7EB00E5082B /* LaunchScreen.storyboard */; };
 		9D20F74E1D45F7EB00E5082B /* WelComeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20F74D1D45F7EB00E5082B /* WelComeTests.swift */; };
 		9D20F7591D45F7EB00E5082B /* WelComeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20F7581D45F7EB00E5082B /* WelComeUITests.swift */; };
+		9D20F7671D46199000E5082B /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D20F7661D46199000E5082B /* FirstViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		9D20F7541D45F7EB00E5082B /* WelComeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WelComeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D20F7581D45F7EB00E5082B /* WelComeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelComeUITests.swift; sourceTree = "<group>"; };
 		9D20F75A1D45F7EB00E5082B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9D20F7661D46199000E5082B /* FirstViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 			children = (
 				9D20F7381D45F7EB00E5082B /* AppDelegate.swift */,
 				9D20F73A1D45F7EB00E5082B /* ViewController.swift */,
+				9D20F7661D46199000E5082B /* FirstViewController.swift */,
 				9D20F73C1D45F7EB00E5082B /* Main.storyboard */,
 				9D20F73F1D45F7EB00E5082B /* Assets.xcassets */,
 				9D20F7411D45F7EB00E5082B /* LaunchScreen.storyboard */,
@@ -256,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D20F7671D46199000E5082B /* FirstViewController.swift in Sources */,
 				9D20F73B1D45F7EB00E5082B /* ViewController.swift in Sources */,
 				9D20F7391D45F7EB00E5082B /* AppDelegate.swift in Sources */,
 			);
@@ -484,6 +488,7 @@
 				9D20F75F1D45F7EB00E5082B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D20F7601D45F7EB00E5082B /* Build configuration list for PBXNativeTarget "WelComeTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +497,7 @@
 				9D20F7621D45F7EB00E5082B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9D20F7631D45F7EB00E5082B /* Build configuration list for PBXNativeTarget "WelComeUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +506,7 @@
 				9D20F7651D45F7EB00E5082B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
