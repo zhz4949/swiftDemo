@@ -16,10 +16,28 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
         self.window?.backgroundColor = UIColor.whiteColor()
-        let viewContrller = ViewController()
-        let nav = UINavigationController.init(rootViewController: viewContrller)
-        self.window?.rootViewController = nav
+        
+        if(!NSUserDefaults.standardUserDefaults().boolForKey("firstLaunch"))
+        {
+//            self.window?.rootViewController = ViewController()
+            let viewContrller = ViewController()
+            let nav = UINavigationController.init(rootViewController: viewContrller)
+            self.window?.rootViewController = nav
+            self.window?.makeKeyAndVisible()
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
+        }
+        else
+        {
+//            self.window?.rootViewController = FirstViewController()
+            let firstViewController = FirstViewController()
+            let nav1 = UINavigationController.init(rootViewController: firstViewController)
+            self.window?.rootViewController = nav1
+            self.window?.makeKeyAndVisible()
+            NSUserDefaults.standardUserDefaults().setBool(true, forKey: "firstLaunch")
+        }
+        
         
         return true
     }

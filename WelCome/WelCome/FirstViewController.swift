@@ -16,7 +16,7 @@ class FirstViewController: UIViewController {
         
         self.title = "swift"
         self.view.backgroundColor = UIColor.whiteColor()
-        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "返回", style: UIBarButtonItemStyle.Plain, target: self, action: #selector(click))
+        self.navigationItem.leftBarButtonItem = UIBarButtonItem.init(title: "", style: UIBarButtonItemStyle.Plain, target: self, action: nil)
         
         btn.frame = CGRectMake(20, 100, self.view.frame.width - 40,50)
         btn.setTitle("欢迎来到swift", forState: UIControlState.Normal)
@@ -34,12 +34,12 @@ class FirstViewController: UIViewController {
             }, completion: nil)
         // Do any additional setup after loading the view.
     }
-    func click()
-    {
-        self.navigationController?.popViewControllerAnimated(true)
-        self.navigationController?.navigationBar.hidden = true
-        
-    }
+//    func click()
+//    {
+//        self.navigationController?.popViewControllerAnimated(true)
+//        self.navigationController?.navigationBar.hidden = true
+//        
+//    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
